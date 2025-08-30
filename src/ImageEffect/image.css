@@ -1,0 +1,9 @@
+
+.text-bg{
+    background: url("https://i.pinimg.com/736x/9d/7c/af/9d7caf002efa649234adcec4aadb96fc.jpg");
+    /* background: url("https://i.pinimg.com/1200x/fc/d6/99/fcd699e0cc41c3f549a34c43fa7fcfd8.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+}

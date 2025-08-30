@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div>
+      <input type="file" id="inputFiles" multiple />
+      <button id="btn">Upload</button>
+    </div>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", async () => {
+        const inputFiles = document.getElementById("inputFiles");
+        const files = inputFiles.files;
+
+        if (!files.length) {
+          console.log("No files selected");
+          return;
+        }
+
+
+        const formData = new FormData();
+        for (let i = 0; i < files.length; i++) {
+          formData.append("files", files[i]);
+        }
+
+        const response = await fetch('http://localhost:3000/upload', {
+            method : "POST",
+            headers: { "Content-Type": "application/json" },
+            body : JSON.stringify({formData, folder : Date.now()})
+        })
+
+        const data = await response.json();
+
+        console.log(data);
+    
+      });
+    </script>
+  </body>
+</html>
