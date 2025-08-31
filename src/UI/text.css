@@ -1,0 +1,20 @@
+.main-text{
+    -webkit-text-stroke: 1px #bd0000;
+}
+
+.img-box-text {
+    /* background: url("https://i.pinimg.com/736x/5e/84/45/5e84450fc8bb24b0b70257c473878c38.jpg"); */
+    /* background: url("https://i.pinimg.com/736x/c8/c3/c2/c8c3c287f5e5152953b8dfa99ab2a334.jpg"); */
+    /* background: url("https://i.pinimg.com/736x/6c/5c/26/6c5c266c9c6ac44b6a035bd06ed86782.jpg"); */
+    /* background: url("https://i.pinimg.com/736x/fd/6f/86/fd6f86b3558bb38548748c99fe82b5be.jpg"); */
+    /* background: url("https://i.pinimg.com/736x/d9/f6/b6/d9f6b6a28fa8b9eccc64f27801f39d27.jpg"); */
+    background: url("https://i.pinimg.com/736x/0a/34/a3/0a34a38f22e93b7ddc19be709177da04.jpg");
+    background-size: cover;
+    background-position:center;
+    background-clip: text;
+    background-size: 450px;
+    color: transparent;
+}
+
+
+

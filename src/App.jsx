@@ -11,7 +11,7 @@ import InfiniteHorizontalScrollReverse from './infiniteScroll/InfiniteHorizontal
 import InfiniteHorizontalScroll from './infiniteScroll/InfiniteHorizontalScroll'
 import Input from './UI/Mic'
 import ClipPath from './clipPath/ClipPath'
-import Marquee from './marque/Marquee'
+// import Marquee from './marque/Marquee'
 import AudioMessage from './voiceMessage/VoiceMessage'
 import AudioRecorder from './voiceMessage/AudioRecorder'
 import AudioRecorderUI from './voiceMessage/AudioRecorderUI'
@@ -49,14 +49,25 @@ import Initial from './GSAP/Initial'
 import ScrollTriggerView from './GSAP/ScrollTriggerView'
 import TimelineView from './GSAP/TimelineView'
 import StarggerView from './GSAP/StarggerView'
+import Marquee from './GSAP/Marquee'
+import Append from './GSAP/Append'
+import Form from './GSAP/Form'
+import ScrollSlider from './GSAP/ScrollSlider'
 
 import SscrollAnimation from './CSSONLY/SscrollAnimation'
+
+import TransparentText from './UI/Text'
 
 function App() {
 
   return (
-      <div className=' '>
-        <SscrollAnimation/>
+      <div>
+        <ScrollSlider/>
+        {/* <TransparentText/> */}
+        {/* <Form/> */}
+        {/* <Append/> */}
+        {/* <Marquee/> */}
+        {/* <SscrollAnimation/> */}
         {/* <StarggerView/> */}
         {/* <TimelineView/> */}
         {/* <ScrollTriggerView/> */}
