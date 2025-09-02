@@ -55,14 +55,24 @@ import Form from './GSAP/Form'
 import ScrollSlider from './GSAP/ScrollSlider'
 
 import SscrollAnimation from './CSSONLY/SscrollAnimation'
-
 import TransparentText from './UI/Text'
+import ScrollBar from './Scroll/ScrollBar'
+
+
+import CylinderScene from './THREE/CylinderScene'
+
+import TextStyle from './CSSONLY/TextStyle'
+import Cube from './CSSONLY/Cube'
 
 function App() {
 
   return (
       <div>
-        <ScrollSlider/>
+        <Cube/>
+        {/* <TextStyle/> */}
+        {/* <CylinderScene/> */}
+        {/* <ScrollBar/> */}
+        {/* <ScrollSlider/> */}
         {/* <TransparentText/> */}
         {/* <Form/> */}
         {/* <Append/> */}
