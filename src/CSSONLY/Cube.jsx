@@ -4,17 +4,23 @@ const Cube = () => {
   return (
     <div className='w-full min-h-screen flex justify-center items-center'>
       <div style={{transformStyle : "preserve-3d"}}  className='w-[600px] aspect-square bg-white/10 flex justify-center items-center'>
-        <div style={{transformStyle : "preserve-3d", transform : "rotateY(-20deg) rotateX(-45deg)"}} className='w-[200px] aspect-square bg-white relative'>
-          <div style={{transform : "translateZ(100px)"}} className='absolute w-full h-full bg-red-500'></div>
-          <div style={{transform : "translateX(100px) rotateY(90deg)"}} className='absolute w-full h-full bg-yellow-500'>
-            <h1 className='text-[5rem] font-extrabold'>ENSA</h1>
+        <div style={{transformStyle : "preserve-3d", transform : "rotateY(45deg) rotateX(-25deg) rotateZ(-20deg) ", backfaceVisibility : "hidden"}} className='w-[200px] aspect-square bg-white/0 relative leading-[2.5rem]'>
+          <div style={{transform : "translateZ(100px)"}} className='absolute w-[250%] flex flex-col justify-start items-start  bg-red-500/0 text-[2rem] '>
+          {/* <h1 className='text-[10rem] font-extrabold leading-[10rem] bg-yellow-400/0'>ENSERTYUIYI</h1> */}
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima suscipit ducimus ea a, qui dolorum iure totam amet rerum! Praesentium reprehenderit pariatur, sint iure labore earum! Doloribus quia porro inventore.</p>
           </div>
-          <div style={{transform : "translateX(-100px) rotateY(270deg)"}} className='absolute w-full h-full bg-green-500'></div>
-          <div style={{transform : "translateZ(-100px) rotateY(180deg)"}} className='absolute w-full h-full bg-pink-500'>
-            <h1 className='text-[5rem] font-extrabold'>ENSA</h1>
+          <div style={{transform : "translateX(360px) rotateY(90deg)", backfaceVisibility : "hidden"}} className='absolute flex justify-start items-start h-full bg-yellow-500/0'>
+            {/* <h1 className='text-[10rem] font-extrabold leading-[11rem] bg-red-500/0 translate-x-[-0px]'>ENS</h1> */}
           </div>
-          <div style={{transform : "translateY(-100px) rotateX(90deg)"}} className='absolute w-full h-full bg-violet-500 flex justify-center items-center'>
-            <h1 className='text-[5rem] font-extrabold'>ENSA</h1>
+          <div style={{transform : "translateX(-100px) rotateY(270deg)", backfaceVisibility : "hidden"}} className='absolute flex justify-start items-start w-full overflow-hidden h-full bg-green-500/0 text-[2rem]'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate laboriosam doloremque, ullam sunt hic earum. Adipisci ex omnis quia eveniet, a sint dolores deleniti? Reprehenderit sint earum dicta. Hic.</p>
+          </div>
+          <div style={{transform : "translateZ(-100px) rotateY(180deg)", backfaceVisibility : "hidden"}} className='absolute flex justify-center items-center w-full h-full bg-pink-500/0'>
+            {/* <h1 className='text-[10rem] font-extrabold font-sayeed'>ENSA</h1> */}
+          </div>
+          <div style={{transform : "translateY(-100px) rotateX(90deg)", backfaceVisibility : "hidden"}} className='absolute w-[300%] h-full bg-violet-500/0 flex flex-col justify-start items-start text-[2rem]'>
+            {/* <h1 className='text-[10rem] font-extrabold bg-red-500/0 leading-[7rem] translate-x-[-0px]'>ENSAFRYHDE</h1> */}
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatem, provident sed magni velit inventore iure libero impedit illum obcaecati at porro maxime molestias ipsa quaerat officia, amet, suscipit quam! amet,   suscipit quam! amet, suscipit quam! amet, suscipit quam! suscipit quam! amet, suscipit quam! amet, suscipit quam!</p>
           </div>
         </div>
       </div>
