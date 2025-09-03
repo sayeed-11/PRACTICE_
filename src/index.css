@@ -14,9 +14,9 @@
   font-style: normal;
 }
 
-body {
+/* body {
   font-family: "sayeed", sans-serif;
-}
+} */
 
 @theme{
   --font-bruno-ace : Bruno Ace, "sans-sarif";

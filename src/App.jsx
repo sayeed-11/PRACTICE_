@@ -26,7 +26,7 @@ import AdvancedCarousel from './Carousel/AdvancedCarousel'
 import TextImage from './TextImage/TextImage'
 import SmoothScroll from './lenis/SmoothScroll'
 import LenisComponent from './lenis/LenisComponent'
-import TextShadow from './TextShadow/TextShadow'
+// import TextShadow from './TextShadow/TextShadow'
 import Reflect from './Reflect/Reflect'
 import Slider from './Carousel/Slider'
 import MaginifyHover from './Hover/MaginifyHover'
@@ -63,12 +63,14 @@ import CylinderScene from './THREE/CylinderScene'
 
 import TextStyle from './CSSONLY/TextStyle'
 import Cube from './CSSONLY/Cube'
+import TextShadow from './CSSONLY/TextShadow'
 
 function App() {
 
   return (
       <div>
-        <Cube/>
+        <TextShadow/>
+        {/* <Cube/> */}
         {/* <TextStyle/> */}
         {/* <CylinderScene/> */}
         {/* <ScrollBar/> */}
