@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef, useState } from "react";
 import "./gsap.css";
 
+import Lenis from "@studio-freight/lenis";
+
 const images = [
   "https://i.pinimg.com/1200x/e5/65/66/e56566a7c153f4e982e39dae9cd64f56.jpg",
   "https://i.pinimg.com/736x/d7/af/1b/d7af1bd456534206a5ef90e7386acabf.jpg",
@@ -37,6 +39,26 @@ const images = [
 ];
 
 const ScrollSlider = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      // smooth, lerp, duration etc.
+      smooth: true,
+      lerp: 0.1,
+      smoothWheel: true,
+      smoothTouch: true,
+      wheelMultiplier : 5.5
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.stop && lenis.stop();
+    };
+  }, []);
   return (
     <div className="min-h-screen w-full">
       <AnimatedCards />

@@ -123,15 +123,25 @@ export default function Marquee() {
         <div ref={trackRef} className="flex gap-5 will-change-transform">
           {/* First copy */}
           <div ref={firstSetRef} className="flex gap-5">
-            {data.map((url, i) => (
+            {/* {data.map((url, i) => (
               <Card key={`a-${i}`} url={url} />
-            ))}
+            ))} */}
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
           </div>
           {/* Second copy (identical) */}
           <div className="flex gap-5" aria-hidden="true">
-            {data.map((url, i) => (
+            {/* {data.map((url, i) => (
               <Card key={`b-${i}`} url={url} />
-            ))}
+            ))} */}
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
+            <h1 className="text-white text-[10rem] font-bold">SAYEED</h1>
           </div>
         </div>
       </div>
