@@ -5,7 +5,7 @@ const Mixblend = () => {
     <div className='min-h-screen w-full flex justify-center items-center'>
         <div className='relative w-[35vw] aspect-square border-1 border-white'>
             <div className='absolute w-full h-full bg-white'>
-
+                <div></div>
             </div>
 
             <div className='absolute w-full h-full text-[5vw] flex justify-center items-center font-AbrilFatface'>

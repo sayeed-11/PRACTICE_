@@ -1,13 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
+/* 
 .wrapper {
   width: 90%;
   max-width: 1536px;
@@ -23,7 +14,7 @@
     rgba(0, 0, 0, 1) 80%,
     rgba(0, 0, 0, 0)
   );
-}
+} */
 
 /* @keyframes scrollLeft {
   to {
@@ -31,7 +22,7 @@
   }
 } */
 
-.item {
+/* .item {
   width: 200px;
   height: 100px;
   background-color: red;
@@ -74,4 +65,4 @@
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
-}
+} */
